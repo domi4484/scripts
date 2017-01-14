@@ -18,7 +18,7 @@ echo "Move and resize windows with Alt"
 echo "--------------------------------"
 
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
-gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier ’<Alt>’
+gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>'
 
 echo "-------------------------------"
 echo "Show icons on buttons and menus"
