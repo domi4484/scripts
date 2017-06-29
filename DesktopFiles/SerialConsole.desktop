@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Serial Console
+Exec=picocom -l -b115200 -d8 -pn /dev/ttyS1
+Type=Application
+Icon=/home/hamilton/.local/share/applications/SerialConsole.png
