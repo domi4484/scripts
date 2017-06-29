@@ -1,7 +1,8 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Comment=
 Terminal=true
 Name=Serial Console
-Exec=picocom -l -b115200 -d8 -pn /dev/ttyS1
+Exec=picocom -l -b115200 -d8 -pn /dev/ttyUSB0
 Type=Application
-Icon=/home/hamilton/.local/share/applications/SerialConsole.png
+Icon=/home/domi/.local/share/applications/SerialConsole.png
