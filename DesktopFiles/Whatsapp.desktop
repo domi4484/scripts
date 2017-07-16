@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Comment=Whatsapp
-Terminal=true
+Terminal=false
 Name=Whatsapp
 Exec=chromium --app=https://web.whatsapp.com
 Type=Application
