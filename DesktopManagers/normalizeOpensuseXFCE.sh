@@ -1,5 +1,7 @@
 #!/bin/bash
 
+####
+
 echo "-------------------------------"
 echo "Show icons on buttons and menus"
 echo "-------------------------------"
