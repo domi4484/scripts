@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Comment=Contacts
+Terminal=false
+Name=Contacts
+Exec=chromium --app=https://contacts.google.com/
+Type=Application
+Icon=/usr/share/applications/Contacts.png
+Name[en_US]=Contacts
