@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/domi/Source/lowerspot/MobileClient/build-MobileClientQml-Desktop_Qt_5_9_3_GCC_64bit-Debug/bin/Lowerspot
+Name=Lowerspot
+GenericName=Lowerspot
+Icon=/home/domi/.local/share/applications/Lowerspot.png
+Terminal=false
+Categories=Internet
+MimeType=
