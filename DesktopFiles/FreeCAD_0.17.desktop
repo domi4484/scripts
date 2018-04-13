@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/bin/FreeCAD_0.17.AppImage
+Name=FreeCAD 0.17
+GenericName=FreeCAD 0.17
+Icon=/usr/share/applications/FreeCAD_0.17.png
+Terminal=false
+Categories=Graphics
+MimeType=
