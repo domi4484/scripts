@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Comment=Zoho
+Terminal=false
+Name=Zoho
+Exec=chromium --app=https://mail.zoho.com
+Type=Application
+Icon=/usr/share/applications/Zoho.png
+Name[en_US]=Zoho
