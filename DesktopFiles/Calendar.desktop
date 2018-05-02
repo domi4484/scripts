@@ -1,10 +1,10 @@
 #!/usr/bin/env xdg-open
 
 [Desktop Entry]
-Comment=Gmail
+Comment=Calendar
 Terminal=false
-Name=Gmail
+Name=Calendar
 Exec=chromium --app=https://calendar.google.com/calendar/r?tab=wc
 Type=Application
 Icon=/usr/share/applications/Calendar.png
-Name[en_US]=Gmail
+Name[en_US]=Calendar
