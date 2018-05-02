@@ -5,4 +5,4 @@ Terminal=false
 Name=Whatsapp
 Exec=chromium --app=https://web.whatsapp.com
 Type=Application
-Icon=/home/domi/.local/share/applications/Whatsapp.png
+Icon=/usr/share/applications/Whatsapp.png

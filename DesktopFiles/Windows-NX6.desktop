@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment=WindowsXp NX6
+Terminal=false
+Name=WindowsXp NX6
+Exec=vmplayer "/home/domi/Programmi/vmware/vms/Windows/Windows_XP_UGSnx6/Windows XP Professional.vmx"
+Type=Application
+Icon=/usr/share/applications/Windows-NX6.png

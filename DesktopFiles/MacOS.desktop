@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment=MacOS
+Terminal=false
+Name=MacOS
+Exec=vmplayer "/home/domi/Programmi/vmware/vms/MacOS/OS-X-10.13/OS-X-10.13.vmx"
+Type=Application
+Icon=/usr/share/applications/MacOS.png
