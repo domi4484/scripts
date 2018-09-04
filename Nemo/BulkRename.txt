@@ -1,0 +1,5 @@
+
+1: Install thunar
+
+2: In nemo Edit->Preferences->Behavior->Bulk Rename
+thunar -B
