@@ -14,3 +14,9 @@ echo "-----------------------"
 echo "Disable windows roll up"
 echo "-----------------------"
 /usr/bin/xfconf-query -c xfwm4 -p /general/mousewheel_rollup -s false
+
+
+###
+# Format for panel datetime
+# %R  %m/%d
+#
