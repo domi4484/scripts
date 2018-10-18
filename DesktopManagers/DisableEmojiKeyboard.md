@@ -1,0 +1,5 @@
+
+In terminal:
+~~~
+ibus-setup
+~~~
