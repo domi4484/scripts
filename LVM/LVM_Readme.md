@@ -1,5 +1,6 @@
 # Create LVM partition and mount it:
 
+## Physical volume
 ``` bash
 linux-9vfo:/home/domi # pvcreate /dev/sda4
   Physical volume "/dev/sda4" successfully created.
@@ -21,17 +22,18 @@ linux-9vfo:/home/domi # pvdisplay
 linux-9vfo:/home/domi # pvscan
   PV /dev/sda4                      lvm2 [5.28 GiB]
   Total: 1 [5.28 GiB] / in use: 0 [0   ] / in no VG: 1 [5.28 GiB]
-linux-9vfo:/home/domi # 
-linux-9vfo:/home/domi # 
-linux-9vfo:/home/domi # 
+```
+
+## Volume group
+``` bash
 linux-9vfo:/home/domi # vgcreate vg1 /dev/sda4 
   Volume group "vg1" successfully created
-linux-9vfo:/home/domi # 
-linux-9vfo:/home/domi # 
+```
+
+## Logical volume
+``` bash
 linux-9vfo:/home/domi # lvcreate -n lv1 -l 100%FREE vg1
   Logical volume "lv1" created.
-linux-9vfo:/home/domi # 
-linux-9vfo:/home/domi # 
 linux-9vfo:/home/domi # lvdisplay 
   --- Logical volume ---
   LV Path                /dev/vg1/lv1
@@ -49,9 +51,10 @@ linux-9vfo:/home/domi # lvdisplay
   Read ahead sectors     auto
   - currently set to     1024
   Block device           254:0
-   
-linux-9vfo:/home/domi # mkfs.ext4 /dev/vg
-vg1/         vga_arbiter  
+```
+
+## Format partition
+``` bash
 linux-9vfo:/home/domi # mkfs.ext4 /dev/vg1/lv1 
 mke2fs 1.43.8 (1-Jan-2018)
 Creating filesystem with 1384448 4k blocks and 346752 inodes
@@ -65,12 +68,12 @@ Creating journal (16384 blocks): done
 Writing superblocks and filesystem accounting information: done 
 ```
 
-***fstab*** content:
+## fstab
 ``` bash
 /dev/vg1/lv1 /mnt/lv1 ext4 defaults 1 2
 ```
 
-Mount and change owner:
+## Mount and change owner
 ``` bash
 sudo mkdir /mnt/lv1
 sudo mount /mnt/lv1
