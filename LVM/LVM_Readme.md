@@ -1,6 +1,6 @@
+# Create LVM partition and mount it:
 
-~~~ bash
-
+``` bash
 linux-9vfo:/home/domi # pvcreate /dev/sda4
   Physical volume "/dev/sda4" successfully created.
 linux-9vfo:/home/domi # 
@@ -63,15 +63,17 @@ Allocating group tables: done
 Writing inode tables: done                            
 Creating journal (16384 blocks): done
 Writing superblocks and filesystem accounting information: done 
+```
 
-linux-9vfo:/home/domi # 
-linux-9vfo:/home/domi # cd /mnt/
-linux-9vfo:/mnt # ll
-total 0
-linux-9vfo:/mnt # mkdir lv1
-linux-9vfo:/mnt # mount /dev/l
-lightnvm/     loop-control  lp1           lp3           
-log           lp0           lp2           
-linux-9vfo:/mnt # mount /dev/vg1/lv1 lv1/
+***fstab*** content:
+``` bash
+/dev/vg1/lv1 /mnt/lv1 ext4 defaults 1 2
+```
 
-~~~
+Mount and change owner:
+``` bash
+sudo mkdir /mnt/lv1
+sudo mount /mnt/lv1
+sudo chown jimmy:users /mnt/lv1
+```
+
