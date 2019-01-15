@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/bin/FreeCAD_0.18.AppImage
+Name=FreeCAD 0.18
+GenericName=FreeCAD 0.18
+Icon=/usr/share/applications/FreeCAD_0.18.png
+Terminal=false
+Categories=Graphics
+MimeType=
+Name[en_US]=FreeCAD 0.18
