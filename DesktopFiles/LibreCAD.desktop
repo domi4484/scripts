@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/home/customcut/Source/LibreCAD/unix/librecad
+Exec=librecad
 Name=LibreCAD
 GenericName=LibreCAD
 Icon=/usr/share/applications/LibreCAD.png
